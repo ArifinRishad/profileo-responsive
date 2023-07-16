@@ -186,8 +186,21 @@ footer{
         flex-direction: column;
 
     }
+    .header{
+        background-image: none;
+    }
+    .banner{
+        flex-direction: column;
+
+    }
+    .profile-pic{
+        width:100%
+    }
+    .button-primary{
+        margin-bottom: 10px;
+    }
     
-    .skill-container, footer{
+    .skill-container, footer, nav, nav>ul {
         flex-direction: column;
         gap: 10px;
         justify-content: center;
@@ -209,8 +222,25 @@ footer{
 
 /*Tablet*/
 @media screen and (min-width:576px) and (max-width:992px) {
+    .about-info-container{
+        flex-direction: column;
+
+    }
+    .header{
+        background-image: none;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .profile-pic{
+        width:100%
+    }
+    .button-primary{
+        margin-bottom: 10px;
+        padding: none;
+    }
     
-    .skill-container, footer, .about-info-container{
+    .skill-container, footer, .about-info-container, nav, nav>ul{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
        
@@ -226,5 +256,4 @@ footer{
 .skill{
     padding: 10px;
 }
-
 }
